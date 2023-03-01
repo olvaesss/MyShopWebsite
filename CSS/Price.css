@@ -1,0 +1,54 @@
+@import "MainStyles.css";
+
+.Container_1{
+    display: flex;
+    background-color: beige;
+    border: black 1px solid;
+    border-radius: 20px;
+    height: 400px;
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 2%;
+    padding: 2%;
+    box-shadow: 0 9px #999;
+}
+
+.Product_1{
+    height:400px;
+    width: 250px;
+    background-color: #e8e8d0;
+    border: 1px black solid;
+    margin-left:10px;
+    transition: opacity 0.3s linear ;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+.Product_1:hover{
+    background-color: #e7e8c6;
+    opacity: 90%;
+}
+
+.BuyButton,.LaterButton{
+    width: 180px;
+    height: 40px;
+    background-color: beige;
+    border:1px black solid;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 20px;
+}
+.BuyButton:hover,.LaterButton:hover{
+    -webkit-transform: translatey(4px);
+    transform: translatey(4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color:  rgb(157, 242, 156);
+}
+.Product_Image{
+    margin-top: 3%;
+    width: 190px;
+    height: 150px;
+    border-radius: 15px;
+}
