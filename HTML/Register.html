@@ -8,7 +8,7 @@
     <title>DryCleaning</title>
 </head>
     <header>
-        <a href="index.html"><img class="Logo" alt="" src="/Resources/Logo.png"></a>
+        <a href="index.html"><img class="Logo" alt="" src="../Resources/Logo.jpg"></a>
         <div class="HeaderText"><a href="index.html">FFC</a></div>
         <div class="menu">
             <a href="Price.html"><button class="Price">Прейскурант цен</button></a>
@@ -34,11 +34,16 @@
                 <input type="Password" class="Password_Input_Repeat"></input>
             </div>
             <script src="../JS/Validation.js"></script>
-            <button class="KeepGoing" onclick="PasswordValid()">Зарегистрироваться</button>
+            <div class="Messages">
+                <output class="Wrong_Symbols_password" hidden="hidden">В пароле не должны присутсвовать символы<br>'!','@','#','$','%','^','&','*','(',')','-','_','=','+',' ',',','<','.','>','/','?',']','['</output>
+                <output class="Passwords_Dont_Mathces" hidden="hidden">Пароли не совпадают</output>
+            </div>
+            <button class="KeepGoing" onclick="DrawPassword()">Зарегистрироваться</button>
         </div>
         <div class="HaveAccountDiv">
             <p>У вас уже есть аккаунт? Войдите в него!</p>
             <a href="Login.html"><button class="HaveAccountBtn">Войти</button></a>
         </div>
-    </div></body>
+    </div>
+    </body>
 </html>
