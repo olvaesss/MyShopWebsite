@@ -1,7 +1,7 @@
 @import "MainStyles.css";
 .Buttons{
     display: flex;
-    margin-left: 26%;
+    margin-left: 10%;
     margin-top: 40px;
 }
 .Register,.Login {
@@ -13,7 +13,7 @@
     text-align: center;
     cursor: pointer;
     outline: none;
-    border: none;
+    border: 1px black solid;
     box-shadow: 0 9px #999;
     -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);

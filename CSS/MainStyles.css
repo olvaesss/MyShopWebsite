@@ -1,5 +1,8 @@
+a{
+    text-decoration: none;
+}
 header{
-    width: 100%;
+    width: 1448px;
     display: flex;
     height:200px;
     font-size: 60px;
@@ -8,6 +11,8 @@ header{
     box-shadow: 0 9px #999;
     padding: 10px 0px 10px 0px;
     opacity: 90%;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 .HeaderText{
     margin-top: 70px;
@@ -43,3 +48,49 @@ body{
 .WorkTime:hover,.Price:hover,.Place:hover,.Contacts:hover{
     background-color:  rgb(197, 197, 183);
 }
+
+footer{
+    width: 100%;
+    display: flex;
+    background-color:rgb(213, 213, 192);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.SocialURLS{
+    padding: 1% 1% 1% 1%;
+    font-size: 20px;
+    display: flex;
+    width: 33%;
+}
+.Contact_Pic{
+    height: 18px;
+    width: 18px;
+    margin-right: 2px;
+}
+
+.Footer_Container{
+margin-top: 56px;
+margin-left: 360px;
+}
+
+.logo_footer{
+    height: 110px;
+    width: 110px;
+}
+.Container_1{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 33%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footer_logo{
+    text-align: left;
+    width: 33%;
+    margin-left: 40px;
+}
+
