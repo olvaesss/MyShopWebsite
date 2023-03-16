@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Register.css">
-    <title>DryCleaning</title>
+    <title>Регистрация</title>
 </head>
     <body>
     <div class="body-flex">
@@ -24,15 +24,16 @@
                 <input type="Password" class="Password_Input_Repeat"></input>
             </div>
             <script src="../JS/Validation.js"></script>
+            <script src="../JS/GoPage.js"></script>
             <div class="Messages">
                 <output class="Wrong_Symbols_password" hidden="hidden">В пароле не должны присутсвовать символы<br>'!','@','#','$','%','^','&','*','(',')','-','_','=','+',' ',',','<','.','>','/','?',']','['</output>
                 <output class="Passwords_Dont_Mathces" hidden="hidden">Пароли не совпадают</output>
             </div>
-            <button class="KeepGoing" onclick="DrawPassword()">Зарегистрироваться</button>
+            <button class="KeepGoing" onclick="DrawPassword()"><a>Зарегистрироваться</a></button>
         </div>
         <div class="HaveAccountDiv">
             <p>У вас уже есть аккаунт? Войдите в него!</p>
-            <a href="Login.html"><button class="HaveAccountBtn">Войти</button></a>
+           <button onclick="GoPage(value)" class="HaveAccountBtn" value="Login.html"><a>Войти</a></button>
         </div>
     </div>
     </body>

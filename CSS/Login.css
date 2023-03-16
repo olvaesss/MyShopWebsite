@@ -8,7 +8,7 @@
 }
 .LoginArea{
     padding: 10px;
-    background-color: beige;
+    background-color:rgb(55, 98, 184);
     border: black 1px solid;
     border-radius: 15px;
     width: 33%;
@@ -20,7 +20,7 @@
 
 .KeepGoing, .Register_button{
     margin-top: -20px;
-    background-color: beige;
+    background-color: rgb(14, 9, 112);
     border:1px black solid;
     border-radius: 15px;
     height: 50px;

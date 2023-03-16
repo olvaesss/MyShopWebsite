@@ -1,7 +1,7 @@
 @import "MainStyles.css";
 .RegisterArea{
     margin-left: 18%;
-    background-color: beige;
+    background-color:rgb(55, 98, 184);
     width: 33%;
     height: 400px;
     border-radius: 20px;
@@ -22,7 +22,7 @@ p{
 .KeepGoing{
     margin-top: 20px;
     margin-bottom: 30px;
-    background-color: beige;
+    background-color: rgb(14, 9, 112);
     border:1px black solid;
     border-radius: 15px;
     height: 50px;
@@ -41,14 +41,14 @@ p{
     text-align: center;
     font-size: 18px;
     margin-left: 10%;
-    background-color: beige;
+    background-color:rgb(55, 98, 184);
     width: 26%;
     height: 90px;
     border-radius: 20px;
     border: 1px black solid;
 }
 .HaveAccountBtn{
-    background-color: beige;
+    background-color: rgb(14, 9, 112);
     border:1px black solid;
     border-radius: 15px;
     height: 50px;
@@ -67,4 +67,10 @@ p{
 
 output{
     color:red;
+    font-size: 14px;
+}
+
+p{
+    font-family: 'Roboto';
+    color: white;
 }

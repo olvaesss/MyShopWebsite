@@ -1,16 +1,18 @@
 a{
+    color: white;
     text-decoration: none;
+    font-family: "Roboto";
+
 }
 header{
     width: 1448px;
     display: flex;
     height:200px;
     font-size: 60px;
-    background-color: beige;
+    background-color:rgb(51, 90, 168);
     border-radius: 100px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 9px rgb(50, 52, 88);
     padding: 10px 0px 10px 0px;
-    opacity: 90%;
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -24,41 +26,23 @@ header{
     height: 200px;
 }
 body{
-    background-image: url("../Resources/header.png");
+    background-color: aliceblue;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-.menu{
-    margin-top: 15px;
-    border-radius: 15px;
-    margin-left: 5%;
-    padding: 10px 0px 0px 0px;
-}
-
-.WorkTime,.Price,.Place,.Contacts{
-    background-color: beige;
-    border-radius: 15px;
-    height: 50px;
-    width: 500px;
-    border: black solid 1px;
-}
-
-.WorkTime:hover,.Price:hover,.Place:hover,.Contacts:hover{
-    background-color:  rgb(197, 197, 183);
-}
+}   
 
 footer{
     width: 100%;
     display: flex;
-    background-color:rgb(213, 213, 192);
-    position: absolute;
+    background-color:rgb(87, 87, 87);
     left: 0;
     bottom: 0;
     height: fit-content;
     color: rgb(0, 0, 0);
     text-align: center;
+    position: bottom;
 }
 .SocialURLS{
     padding: 1% 1% 1% 1%;
@@ -81,6 +65,12 @@ margin-left: 360px;
     height: 110px;
     width: 110px;
 }
+
+.div_footer_logo{
+    text-align: left;
+    width: 33%;
+    margin-left: 40px;
+}
 .Container_1{
     font-size: 20px;
     margin-top: 20px;
@@ -88,9 +78,9 @@ margin-left: 360px;
     display: flex;
     flex-flow: column wrap;
 }
-.footer_logo{
-    text-align: left;
-    width: 33%;
-    margin-left: 40px;
-}
-
+@font-face{
+    font-family: "Roboto"; 
+    src: url("../Fonts/Roboto-Black.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
