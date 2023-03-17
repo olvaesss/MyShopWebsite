@@ -19,9 +19,9 @@ function DrawPassword(Input, Input_Repeat){
     Input=document.querySelector('.Password_Input').value
     Input_Repeat=document.querySelector('.Password_Input_Repeat').value
     if(Input==Input_Repeat){
-        PasswordValid(Input)
         document.querySelector(".Passwords_Dont_Mathces").setAttribute(hidden,'hidden')
     }else{
         document.querySelector(".Passwords_Dont_Mathces").removeAttribute(hidden='hidden')
     }
+    PasswordValid(Input)
 }

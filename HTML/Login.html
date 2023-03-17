@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Login.css">
+    <script src="../JS/GoPage.js"></script>
     <title>Вход</title>
 </head>
     <body>
         <div class="Back_Button">
-            <a>Назад</a>
+            <button class="GoMain_button" onclick="GoPage(value)" value="index.html">На главную</button>
         </div>
-        <div class="LoginArea">
-            <div class="Login_input"><a style="margin-right:43px;">Login</a>
-                <input type="text"></input>
+        <div>
+            <div class="LoginArea">
+                <div class="Login_input"><a>Login</a>
+                    <input class="Login_Input" type="text"></input>
+                </div>
+                <div class="Password_input"><a>Password</a>
+                    <input class="Password_Input" type="Password"></input>
+                </div>
+                <button class="KeepGoing" onclick="func"><a>Войти</a></button>
+                <button onclick="GoPage(value)" value="Register.html" class="Register_button"><a>Нет аккаунта? Зарегистрироваться!!!</a></button>
             </div>
-            <div class="Password_input"><a style="margin-right:20px;">Password</a>
-                <input class="Password_Input" type="Password"></input>
-            </div>
-        </div>
-        <button class="KeepGoing" onclick="func">Войти</button>
-        <div style="margin-left:32%; margin-top: 40px;">
-        <a href="Register.html"><button class="Register_button" style="margin-left: 120px;">Нет аккаунта? Зарегистрироваться!!!</button></a>
         </div>
     </body>
 </html>

@@ -26,7 +26,7 @@ header{
     height: 200px;
 }
 body{
-    background-color: aliceblue;
+    background-color: rgb(26, 117, 156);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -36,13 +36,12 @@ body{
 footer{
     width: 100%;
     display: flex;
-    background-color:rgb(87, 87, 87);
-    left: 0;
-    bottom: 0;
+    background-color:rgb(51, 90, 168);
     height: fit-content;
     color: rgb(0, 0, 0);
     text-align: center;
-    position: bottom;
+    position: absolute;
+    left: 0;
 }
 .SocialURLS{
     padding: 1% 1% 1% 1%;
@@ -84,3 +83,28 @@ margin-left: 360px;
     font-style: normal; 
     font-weight: normal; 
 } 
+
+.GoMain_button{
+    margin-top: 40px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: rgb(14, 9, 112);
+    height: 80px;
+    width: 240px;
+    border-radius: 50px;
+    margin-left: 40px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: 1px black solid;
+    box-shadow: 0 9px rgb(60, 63, 114);
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.GoMain_button:hover{
+    -webkit-transform: translatey(4px);
+    transform: translatey(4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+}
