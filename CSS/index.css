@@ -29,4 +29,13 @@
     background-color:rgb(55, 98, 184);
     height: 1000px;
     width: 1000px;
+    padding: 5px 5px 5px 5px;
+}
+
+.Container_1{
+    padding: 5px 5px 5px 5px;
+    background-color:rgb(51, 90, 168);
+    text-align: left;
+    width: 990px;
+    height: 50px ;
 }
