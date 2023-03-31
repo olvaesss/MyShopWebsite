@@ -4,7 +4,7 @@
   "description": "NodeJS Project",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon HTML/index.html"
+    "dev": "nodemon server.js"
   },
   "keywords": [
     "Node",

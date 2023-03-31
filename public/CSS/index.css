@@ -1,0 +1,45 @@
+@import "MainStyles.css";
+
+h1{
+    font-size: 61px;
+}
+.Buttons{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.Register,.Login {
+    background-color: rgb(14, 9, 112);
+    height: 80px;
+    width: 300px;
+    border-radius: 50px;
+    margin-left: 40px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: 1px black solid;
+    box-shadow: 0 9px rgb(60, 63, 114);
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Register:hover,.Login:hover{
+    -webkit-transform: translatey(4px);
+    transform: translatey(4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+.Main_Content{
+    margin-left:288px;
+    background-color:rgb(55, 98, 184);
+    height: 1000px;
+    width: 1000px;
+    padding: 5px 5px 5px 5px;
+}
+
+.Container_1{
+    padding: 5px 5px 5px 5px;
+    background-color:rgb(51, 90, 168);
+    text-align: left;
+    width: 990px;
+    height: 50px ;
+}
