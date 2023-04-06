@@ -1,12 +1,15 @@
- let GoFlag=true
+import { appendFile } from "fs"
+
+let UserFlag=false
 function DrawPassword(Input, Input_Repeat){
     Input=document.querySelector('.Password_Input').value
     Input_Repeat=document.querySelector('.Password_Input_Repeat').value
     if(Input==Input_Repeat){
         document.querySelector(".Passwords_Dont_Mathces").hidden='hidden'
+        UserFlag=true
     }else{  
         document.querySelector(".Passwords_Dont_Mathces").removeAttribute(hidden='hidden')
-        GoFlag=false
+        UserFlag=false
     }
     let arr_banned=['!','@','#','$','%','^','&','*','(',')','-','_','=','+',' ',',','<','.','>','/','?',']','[']
     let flag=true
@@ -17,31 +20,22 @@ function DrawPassword(Input, Input_Repeat){
         }
     }
     if(flag===true){
+        UserFlag=true
         document.querySelector(".Wrong_Symbols_password").hidden='hidden'}
     else{
         document.querySelector(".Wrong_Symbols_password").removeAttribute(hidden='hidden')
-        GoFlag=false
+        UserFlag=false
     }
     console.log(Input.length)
     if(Input.length >= 8){
         document.querySelector(".Minimal_Password_Range").hidden='hidden'
+        UserFlag=true
     }
     else{
         document.querySelector(".Minimal_Password_Range").removeAttribute(hidden='hidden')
-        GoFlag=false
+        UserFlag=false
     }
-    Go()
+    if(UserFlag===true){
+        
+    }
 }
-
-// function Go(){
-//     if(GoFlag===true)
-//     {
-//         window.location.href = "index.html"
-//         document.querySelector(".Buttons").hidden='hidden'
-//         document.querySelector(".UserArea").removeAttribute(hidden='hidden')
-//         alert("Успешная регистрация!")
-//     }
-//     else{
-//         alert("Server Error")
-//     }
-// }
