@@ -67,9 +67,24 @@ h1{
 
 .UserArea{
     text-align: right;
+    margin-top: 4%;
+    display: flex;
     background-color:rgb(56, 90, 160);;
     border-radius: 25px;
     border: black solid 1px;
-    width: 20%;
-    height: max-content;
+    width: max-content;
+    height: 40%;
+    /* margin-left: 22%; */
+}
+
+.User_Profile,.Icon,.Exit_From_Profile{
+    height: 33%;
+    margin-left: 6%;
+    vertical-align: middle;
+}
+
+.Exit_Account_Button{
+    background-color: rgb(14, 9, 112);
+    border: 1px black solid;
+    border-radius: 15px;
 }

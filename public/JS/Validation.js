@@ -1,4 +1,3 @@
-import { appendFile } from "fs"
 
 let UserFlag=false
 function DrawPassword(Input, Input_Repeat){
