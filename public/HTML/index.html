@@ -6,30 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../JS/check_user_status.js"></script>
         <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+        <script src="../JS/GoPage.js"></script>
         <title>Borcelle</title>
     </head>
     <body>
         <header>
             <a href="/"><img class="Logo" src="../Resources/Logo.jpg"></a>
             <div class="HeaderText"><a href="/"><h1>Borcelle</h1></a></div>
-            <div hidden="hidden" class="UserArea">
+            <div class="UserArea">
                 <div class="Icon">
-
+                    <img style="width: 30px;height: 30px;">
                 </div>
                 <div class="User_Profile">
-
+                    <div class="UserName"><a href="/Account">Имя</a></div>
                 </div>
                 <div class="Exit_From_Profile">
-                    
+                    <button onclick="func"><a>Выйти из аккаунта</a></button>
                 </div>
             </div>
-            <div class="Buttons">
-                <script src="../JS/GoPage.js"></script>
+            <div class="Buttons" hidden="hidden">
                 <div>
-                  <button onclick="GoPage(value)" class="Register" value="Register"><a>Зарегестрироваться</a></button>
+                  <button hidden="hidden" onclick="GoPage(value)" class="Register" value="Register"><a>Зарегестрироваться</a></button>
                 </div>
                 <div>
-                    <button onclick="GoPage(value)" class="Login" value="Login"><a>Войти</a></button>
+                    <button hidden="hidden" onclick="GoPage(value)" class="Login" value="Login"><a>Войти</a></button>
                 </div>
             </div>
         </header>

@@ -1,0 +1,7 @@
+@import url(MainStyles.css);
+
+header{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}

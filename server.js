@@ -17,8 +17,8 @@ server.get('/Register', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/Register.html`);
 });
 
-server.get('/UserPage', (req, res) => {
-    res.sendFile(`${__dirname}/public/HTML/UserPage`);
+server.get('/Account', (req, res) => {
+    res.sendFile(`${__dirname}/public/HTML/UserPage.html`);
 });
 
 server.get('/Check_Register',(req,res)=>{
