@@ -13,18 +13,18 @@
             <button class="GoMain_button" onclick="GoPage(value)" value="/">На главную</button>
         </div>
         <div class="Content_Box">
-            <div class="LoginArea">
-                <div class="Login_input"><a>Login</a>
-                    <input class="Login_Input" type="text"></input>
+            <form action="" method="post" class="LoginArea">
+                <div class="Login_input"><a>Имя пользователя</a>
+                    <input class="Login_Input" required="required" type="text" name="Login"></input>
                 </div>
-                <div class="Password_input"><a>Password</a>
-                    <input class="Password_Input" type="Password"></input>
+                <div class="Password_input"><a>Пароль</a>
+                    <input class="Password_Input" required="required" type="Password" name="Password"></input>
                 </div>
                 <div class="Buttons">
-                    <button class="KeepGoing" onclick="func"><a>Войти</a></button>
+                    <button class="KeepGoing"><a>Войти</a></button>
                     <button onclick="GoPage(value)" value="Register" class="Register_button"><a>Нет аккаунта? Зарегистрироваться!!!</a></button>    
                 </div>
-            </div>
+            </form>
         </div>
     </body>
 </html>

@@ -49,63 +49,14 @@ input{
 }
 
 .Login_Input{
-    margin-left: 58px;
+    margin-left: 0px;
 }
 
 .Password_Input{
-    margin-left: 28px;
+    margin-left: 58px;
 }
 
 .Buttons{
     display: flex;
     width: max-content;
-}
-
-.Content_Box{
-    width: 40%;
-}
-
-footer{
-    width: 100%;
-    display: flex;
-    background-color:rgb(51, 90, 168);
-    height: fit-content;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    position: absolute;
-    left: 0;
-}
-.SocialURLS{
-    padding: 1% 1% 1% 1%;
-    font-size: 20px;
-    display: flex;
-    width: 33%;
-}
-.Contact_Pic{
-    height: 18px;
-    width: 18px;
-    margin-right: 2px;
-}
-
-.Footer_Container{
-margin-top: 56px;
-margin-left: 360px;
-}
-
-.logo_footer{
-    height: 110px;
-    width: 110px;
-}
-
-.div_footer_logo{
-    text-align: left;
-    width: 33%;
-    margin-left: 40px;
-}
-.Container_1_footer{
-    font-size: 20px;
-    margin-top: 20px;
-    width: 33%;
-    display: flex;
-    flex-flow: column wrap;
 }

@@ -1,4 +1,3 @@
-
 let UserFlag=false
 function DrawPassword(Input, Input_Repeat){
     Input=document.querySelector('.Password_Input').value

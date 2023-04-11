@@ -14,19 +14,19 @@
         <div class="Back_Button">
             <button class="GoMain_button" onclick="GoPage(value)" value="/">На главную</button>
         </div>
-        <form== class="RegisterArea">
+        <form action='' method="post" class="RegisterArea">
             <p>"*" - Обязательное поле</p>
             <div class="Username"><p>Username*</p>
-                <input class="UserName_Input" type="text"></input>
+                <input class="UserName_Input" required="required" type="text" name="Name"></input>
             </div>
             <div class="E-mail"><p>E-mail*</p>
-                <input class="Email_Input" type="text"></input>
+                <input class="Email_Input" required="required" type="text" name="Email"></input>
             </div>
             <div class="Password"><p>Password*</p>
-                <input class="Password_Input" type="Password"></input>
+                <input class="Password_Input" required="required" type="Password" name="Password"></input>
             </div>
             <div class="Password_Repeat"><p>Repeat Password*</p>
-                <input class="Password_Input_Repeat" type="Password" ></input>
+                <input class="Password_Input_Repeat" required="required" type="Password"></input>
             </div>
             <div class="Messages">
                 <ul>
