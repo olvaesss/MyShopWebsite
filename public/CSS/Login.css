@@ -12,7 +12,7 @@ body{
 .LoginArea{
     margin-top: 200px;
     padding: 10px;
-    background-color:rgb(55, 98, 184);
+    background-color: beige;
     border: black 1px solid;
     border-radius: 15px;
     width: max-content;
@@ -23,12 +23,12 @@ body{
 
 .KeepGoing, .Register_button{
     margin-top: 20px;
-    background-color: rgb(14, 9, 112);
+    background-color: beige;
     border:1px black solid;
     border-radius: 15px;
     height: 50px;
     width: 300px;
-    box-shadow: 0 9px rgb(60, 63, 114);
+    box-shadow: 0 9px rgb(180, 180, 135);
     -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

@@ -1,12 +1,12 @@
 a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: "Roboto";
     font-size: 18px;
 }
 
 body{
-    background-color: rgb(26, 117, 156);
+    background-image: url('../Resources/header.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,10 +22,9 @@ body{
 
 .GoMain_button{
     margin-top: 40px;
-    color: white;
     font-family: "Roboto";
     font-size: 20px;
-    background-color: rgb(14, 9, 112);
+    background-color: beige;
     height: 80px;
     width: 240px;
     border-radius: 50px;
@@ -34,7 +33,7 @@ body{
     cursor: pointer;
     outline: none;
     border: 1px black solid;
-    box-shadow: 0 9px rgb(60, 63, 114);
+    box-shadow: 0 9px rgb(180, 180, 135);
     -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

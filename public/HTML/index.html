@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../CSS/index.css" type="text/css">
-        <script src="../JS/GoPage.js"></script>
-        <title>Borcelle</title>
-    </head>
-    <body>
-        <header>
-            <a href="/"><img class="Logo" src="../Resources/Logo.jpg"></a>
-            <div class="HeaderText"><a href="/"><h1>Borcelle</h1></a></div>
-            <div class="UserArea">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <script src="../JS/GoPage.js"></script>
+    <title>Borcelle</title>
+</head>
+
+<body>
+    <header>
+        <a href="/"><img class="Logo" src="../Resources/Logo.jpg"></a>
+        <div class="HeaderText"><a href="/">
+                <h1>Borcelle</h1>
+            </a>
+        </div>
+
+            <div class="UserArea" onclick="location.href='/Account'">
                 <div class="Icon">
-                    <img style="width: 30px;height: 30px;">
+                    <a href="/Account"><img src="../Resources/user_icon.png" style="width: 30px;height: 30px;"></a>
                 </div>
                 <div class="User_Profile">
                     <div class="UserName"><a href="/Account">Имя</a></div>
                 </div>
                 <div class="Exit_From_Profile">
-                    <button class="Exit_Account_Button" onclick="func"><a>Выйти из аккаунта</a></button>
+                    <button class="Exit_Account_Button"><a style="font-size: 14px;">Выйти из аккаунта</a></button>
                 </div>
             </div>
-            <div class="Buttons" hidden="hidden">
+            <div class="Buttons">
                 <div>
-                  <button  onclick="GoPage(value)" class="Register" value="Register"><a>Зарегестрироваться</a></button>
+                    <button onclick="GoPage(value)" class="Register"
+                        value="Register"><a>Зарегестрироваться</a></button>
                 </div>
                 <div>
-                    <button  onclick="GoPage(value)" class="Login" value="Login"><a>Войти</a></button>
+                    <button onclick="GoPage(value)" class="Login" value="Login"><a>Войти</a></button>
                 </div>
             </div>
-        </header>
-        <div class="Main_Content">
-            <div class="Container_1">
-                <div class="Container_1_Text">
-                    <a>Наша компания предоставляет услуги химчистки по всему городу Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorum rerum necessitatibus et amet nihil, enim tenetur impedit id vel dolorem, est ab placeat veritatis sit corrupti quidem suscipit natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta dolorem sunt necessitatibus, sapiente unde blanditiis sint accusamus maxime adipisci autem debitis hic sed consectetur deserunt cumque harum dolor aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos molestiae ducimus, adipisci voluptates consequuntur! Iure quasi, nam vel, tenetur cum obcaecati corrupti, eveniet magnam error culpa delectus. Quas, Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cum rerum voluptas alias quam consequuntur provident aspernatur neque, dolore quisquam quos ullam quae fugiat. Corporis optio itaque iure quia voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, rem autem architecto fuga hic in tenetur? Commodi nesciunt esse ad quam et sapiente, quis debitis ea, natus cupiditate recusandae eaque!.</a>
-                </div>
-                <div class="Container_1_img">
-                    <img src="">
-                </div>
+    </header>
+    <div class="Main_Content">
+        <div class="Container_1">
+            <div class="Container_1_Text">
+                <a>Текст</a>
             </div>
+            <div class="Container_1_img">
+                <img src="">
+            </div>
+        </div>
 
+    </div>
+</body>
+<footer>
+    <div class="div_footer_logo">
+        <img class="logo_footer" src="../Resources/Logo.jpg">
+    </div>
+    <div class="Container_1_footer">
+        <a>Прейскурант</a>
+        <a>Местонахождение</a>
+        <a>Режим работы</a>
+    </div>
+    <div class="SocialURLS">
+        <div class="Footer_Container">
+            <a href="https://www.instagram.com/olvaesss/" value="">
+                <img class="Contact_Pic" src="../Resources/InstagramPicture.png">
+            </a>
+            <a href="https://t.me/ZXCghoulHR" value="">
+                <img class="Contact_Pic" src="../Resources/TelegramPicture.png">
+            </a>
+            <a href="https://discordapp.com/users/425236850232524801/" value="">
+                <img class="Contact_Pic" src="../Resources/DiscordPicture.png">
+            </a>
         </div>
-    </body>
-    <footer>
-        <div class="div_footer_logo">
-            <img class="logo_footer" src="../Resources/Logo.jpg">
-        </div>
-        <div class="Container_1_footer">
-            <a>Прейскурант</a>
-            <a>Местонахождение</a>
-            <a>Режим работы</a>
-        </div>
-        <div class="SocialURLS">
-            <div class="Footer_Container">
-                <a href="https://www.instagram.com/olvaesss/" value="">
-                    <img class="Contact_Pic" src="../Resources/InstagramPicture.png">
-                </a>
-                <a href="https://t.me/ZXCghoulHR" value="">
-                    <img class="Contact_Pic" src="../Resources/TelegramPicture.png">
-                </a>
-                <a href="https://discordapp.com/users/425236850232524801/" value="">
-                    <img class="Contact_Pic" src="../Resources/DiscordPicture.png">
-                </a>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
+
 </html>

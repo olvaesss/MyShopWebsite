@@ -1,8 +1,6 @@
-const firebase = require('@firebase/firestore')
-const express = require('express');
+const express = require('express')
 const server = express();
-const path = require('path');
-const Database = require('@firebase/firestore')
+const path = require ('path')
 const urlencodedParser = express.urlencoded({extended: false});
 const firebaseConfig = {
   apiKey: "AIzaSyBg_gX6hmBiNxzbALLm7XsI7gjHtkYVDhQ",

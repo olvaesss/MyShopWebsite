@@ -1,7 +1,12 @@
 @import url(MainStyles.css);
 
+body{
+    width: 100%;
+}
 header{
+    height: max-content;
     width: 100%;
     text-align: center;
-    background-color: black;
+    background-color: beige;
+    position: absolute;
 }
