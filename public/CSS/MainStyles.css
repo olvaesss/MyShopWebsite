@@ -6,6 +6,9 @@ a{
 }
 
 body{
+    border: 0;
+    padding: 0;
+    margin: 0;
     background-image: url('../Resources/header.png');
     background-size: cover;
     background-position: center center;

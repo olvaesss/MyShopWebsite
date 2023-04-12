@@ -50,7 +50,7 @@ p{
     height: 90px;
     border-radius: 20px;
     border: 1px black solid;
-    box-shadow: 0 9px rgb(60, 63, 114);
+    box-shadow: 0 9px rgb(180, 180, 135);
 }
 .HaveAccountBtn{
     background-color: beige;
@@ -58,7 +58,7 @@ p{
     border-radius: 15px;
     height: 50px;
     width: 300px;
-    box-shadow: 0 9px rgb(60, 63, 114);
+    box-shadow: 0 9px rgb(180, 180, 135);
     -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

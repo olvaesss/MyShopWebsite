@@ -25,7 +25,7 @@ h1{
     font-size: 61px;
 }
 .Buttons{
-    display: none;
+    display: flex;
     margin-left: 10%;
     margin-top: 40px;
 }
@@ -51,7 +51,7 @@ h1{
 
 .Main_Content{
     margin-left:288px;
-    background-color: rgb(203, 203, 182);
+    background-color: rgb(223, 223, 202);
     height: 1000px;
     width: 1000px;
     padding: 10px 10px 10px 10px;
@@ -68,7 +68,7 @@ h1{
 .UserArea{
     text-align: right;
     margin-top: 4%;
-    display: flex;
+    display: none;
     background-color: beige;
     border-radius: 25px;
     border: black solid 1px;
