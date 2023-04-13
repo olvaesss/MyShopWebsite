@@ -44,6 +44,10 @@ server.get('/Account', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/UserPage.html`);
 });
 
+server.get('/favicon', (res,req)=>{
+    res.sendFile(`${__dirname}/public/Resources/favicon.ico`)
+});
+
 server.get('/Check_Register',(req,res)=>{
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 })

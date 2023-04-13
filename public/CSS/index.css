@@ -7,7 +7,7 @@ header{
     height:200px;
     font-size: 60px;
     border-radius: 100px;
-    box-shadow: 0 9px rgb(180, 180, 135);
+    box-shadow: 0 9px rgba(0, 0, 0, 0.5);
     padding: 10px 0px 10px 0px;
     margin-left: 60px;
     margin-right: 60px;
