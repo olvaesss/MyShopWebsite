@@ -1,9 +1,9 @@
-const db= require('@firebase/firestore');
+const firebase = require('firebase/app')
 const express = require('express');
 const server = express();
 const path = require ('path');
 const urlencodedParser = express.urlencoded({extended: false});
-const firebaseConfig = {
+const db = firebase.initializeApp({
   apiKey: "AIzaSyBg_gX6hmBiNxzbALLm7XsI7gjHtkYVDhQ",
   authDomain: "myshopwebsite-4ffa7.firebaseapp.com",
   projectId: "myshopwebsite-4ffa7",
@@ -11,7 +11,7 @@ const firebaseConfig = {
   messagingSenderId: "728881829192",
   appId: "1:728881829192:web:fa3b8da2de3a1c06f18f7d",
   measurementId: "G-1M8BFDRTBZ"
-};
+})
 
 let count=0
 

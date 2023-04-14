@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="../CSS/Register.css" type="text/css">
     <script src="../JS/Validation.js"></script>
     <script src="../JS/GoPage.js"></script>
-    <script>window.onload=circle();
-    </script>
     <title>Регистрация</title>
 </head>
     <body>
@@ -18,16 +16,16 @@
         </div>
         <form action='' method="post" class="RegisterArea">
             <div class="Username">
-                <input class="UserName_Input" required="required" type="text" name="Name" placeholder="Имя*"></input>
+                <input class="UserName_Input" required="required" type="text" name="Name" placeholder="Имя*" onchange='DrawPassword(this/value)'></input>
             </div>
             <div class="E-mail">
-                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*"></input>
+                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*" onchange='DrawPassword(this/value)'></input>
             </div>
             <div class="Password">
-                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*"></input>
+                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*" onchange='DrawPassword(this/value)'></input>
             </div>
             <div class="Password_Repeat">
-                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*"></input>
+                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*" onchange='DrawPassword(this/value)'></input>
             </div>
             <div class="Messages">
                 <ul>
