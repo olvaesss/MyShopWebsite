@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../CSS/Register.css" type="text/css">
     <script src="../JS/Validation.js"></script>
     <script src="../JS/GoPage.js"></script>
+    <script>window.onload=circle();
+    </script>
     <title>Регистрация</title>
 </head>
     <body>
@@ -15,18 +17,17 @@
             <button class="GoMain_button" onclick="GoPage(value)" value="/">На главную</button>
         </div>
         <form action='' method="post" class="RegisterArea">
-            <p>"*" - Обязательное поле</p>
-            <div class="Username"><p>Username*</p>
-                <input class="UserName_Input" required="required" type="text" name="Name"></input>
+            <div class="Username">
+                <input class="UserName_Input" required="required" type="text" name="Name" placeholder="Имя*"></input>
             </div>
-            <div class="E-mail"><p>E-mail*</p>
-                <input class="Email_Input" required="required" type="text" name="Email"></input>
+            <div class="E-mail">
+                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*"></input>
             </div>
-            <div class="Password"><p>Password*</p>
-                <input class="Password_Input" required="required" type="Password" name="Password"></input>
+            <div class="Password">
+                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*"></input>
             </div>
-            <div class="Password_Repeat"><p>Repeat Password*</p>
-                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat"></input>
+            <div class="Password_Repeat">
+                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*"></input>
             </div>
             <div class="Messages">
                 <ul>
@@ -35,10 +36,10 @@
                     <li class="Passwords_Dont_Mathces" hidden="hidden">Пароли не совпадают</li>
                 </ul>
             </div>
-            <button class="KeepGoing" onclick="DrawPassword()" ><a>Зарегистрироваться</a></button>
+            <button class="KeepGoing" onclick="" ><a>Зарегистрироваться</a></button>
         </form>
         <div class="HaveAccountDiv">
-            <p>У вас уже есть аккаунт? Войдите в него!</p>
+            <a>У вас уже есть аккаунт? Войдите в него!</a>
            <button onclick="GoPage(value)" class="HaveAccountBtn" value="Login"><a>Войти</a></button>
         </div>
     </div>

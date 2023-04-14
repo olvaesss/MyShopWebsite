@@ -49,11 +49,13 @@ input{
 }
 
 .Login_Input{
-    margin-left: 0px;
+    margin-left: 56px;
+    box-shadow: 0 6px rgb(180, 180, 135);
 }
 
 .Password_Input{
-    margin-left: 58px;
+    margin-left: 46px;
+    box-shadow: 0 6px rgb(180, 180, 135);
 }
 
 .Buttons{
