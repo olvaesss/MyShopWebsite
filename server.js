@@ -1,4 +1,4 @@
-const firebase = require('firebase/app')
+const firebase = require('firebase/app');
 const express = require('express');
 const server = express();
 const path = require ('path');
@@ -13,11 +13,11 @@ const db = firebase.initializeApp({
   measurementId: "G-1M8BFDRTBZ"
 })
 
-let count=0
+let count=0;
 
 class User{
     constructor(ID){
-        this.ID=ID
+        this.ID=ID;
     }
     Name=String;
     Email=String;

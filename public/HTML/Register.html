@@ -16,16 +16,16 @@
         </div>
         <form action='' method="post" class="RegisterArea">
             <div class="Username">
-                <input class="UserName_Input" required="required" type="text" name="Name" placeholder="Имя*" onchange='DrawPassword(this/value)'></input>
+                <input class="UserName_Input" required="required" type="text" name="Name" placeholder="Имя*" onchange='DrawPassword()'></input>
             </div>
             <div class="E-mail">
-                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*" onchange='DrawPassword(this/value)'></input>
+                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*" onchange='DrawPassword()'></input>
             </div>
             <div class="Password">
-                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*" onchange='DrawPassword(this/value)'></input>
+                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*" onchange='DrawPassword()'></input>
             </div>
             <div class="Password_Repeat">
-                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*" onchange='DrawPassword(this/value)'></input>
+                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*" onchange='DrawPassword()'></input>
             </div>
             <div class="Messages">
                 <ul>
@@ -34,7 +34,7 @@
                     <li class="Passwords_Dont_Mathces" hidden="hidden">Пароли не совпадают</li>
                 </ul>
             </div>
-            <button class="KeepGoing" onclick="" ><a>Зарегистрироваться</a></button>
+            <button class="KeepGoing" hidden="true" ><a>Зарегистрироваться</a></button>
         </form>
         <div class="HaveAccountDiv">
             <a>У вас уже есть аккаунт? Войдите в него!</a>
