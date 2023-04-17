@@ -1,22 +1,16 @@
-let UserFlag=false
+let Range_flag=false;
+let Special_flag=false;
+let Match_flag=false;
 function DrawPassword(){
     Input=document.querySelector('.Password_Input').value;
     Input_Repeat=document.querySelector('.Password_Input_Repeat').value;
-    if(Input==''||Input_Repeat==''){
-        document.querySelector(".Minimal_Password_Range").removeAttribute(hidden='hidden');
-        UserFlag=false;
-    }
-    else{
-        document.querySelector(".Minimal_Password_Range").hidden='hidden';
-        UserFlag=true;
-    }
     if(Input.length >= 8){
         document.querySelector(".Minimal_Password_Range").hidden='hidden';
-        UserFlag=true;
+        Range_flag=true;
     }
     else{
         document.querySelector(".Minimal_Password_Range").removeAttribute(hidden='hidden');
-        UserFlag=false;
+        Range_flag=false;
     };
     let arr_banned=['!','@','#','$','%','^','&','*','(',')','-','_','=','+',' ',',','<','.','>','/','?',']','['];
     let flag=true;
@@ -27,20 +21,20 @@ function DrawPassword(){
         }
     };
     if(flag===true){
-        UserFlag=true;
+        Special_flag=true;
         document.querySelector(".Wrong_Symbols_password").hidden='hidden';}
     else{
         document.querySelector(".Wrong_Symbols_password").removeAttribute(hidden='hidden');
-        UserFlag=false
+        Special_flag=false
     };
     if(Input==Input_Repeat){
         document.querySelector(".Passwords_Dont_Mathces").hidden='hidden';
-        UserFlag=true;
+        Match_flag=true;
     }else{  
         document.querySelector(".Passwords_Dont_Mathces").removeAttribute(hidden='hidden');
-        UserFlag=false;
+        Match_flag=false;
     }
-    if(UserFlag===true){
+    if(Match_flag===true&&Range_flag===true&&Special_flag===true){
         document.querySelector('.KeepGoing').hidden=false;
     }
     else{
