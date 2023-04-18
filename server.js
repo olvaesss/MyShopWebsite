@@ -10,14 +10,15 @@ const server = express();
 const path = require ('path');
 const urlencodedParser = express.urlencoded({extended: false});
 
-
-let count=0;
+//admin
+let admin_login="admin@gmail.com"
+let admin_password="adminQWE123"
+//
 
 
 server.use(express.static(path.join(__dirname, 'public')));
 
 server.post('/Register', urlencodedParser, (req,res)=>{
-    count+=1;
     const docRef = db.collection('Users').doc(String(req.body.Email));
     docRef.set({
         Name:req.body.Name,
@@ -27,21 +28,29 @@ server.post('/Register', urlencodedParser, (req,res)=>{
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 });
 
+server.get('/Admin', urlencodedParser, (req,res)=>{
+    res.sendFile(`${__dirname}/public/HTML/admin.html`)
+})
+
 server.post('/Login', urlencodedParser, async (req,res)=>{
     console.log(req.body)
-    const userRef = db.collection('Users').doc(String(req.body.Email));
-    const doc = await userRef.get();
-    if (!doc.exists) {
-        res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
-    } else {
-        if(req.body.Password==doc.get('Password')){
-            res.sendFile(`${__dirname}/public/HTML/index_reg.html`);
-        }
-        else{
+    if(req.body.Email==admin_login||req.body.Password==admin_password){
+        res.sendFile(`${__dirname}/public/HTML/admin.html`)
+    }
+    else{
+        const userRef = db.collection('Users').doc(String(req.body.Email));
+        const doc = await userRef.get();
+        if (!doc.exists) {
             res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
+        } else {
+            if(req.body.Password==doc.get('Password')){
+                res.sendFile(`${__dirname}/public/HTML/index_reg.html`);
+            }
+            else{
+                res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
+            }
         }
     }
-
 });
 
 
