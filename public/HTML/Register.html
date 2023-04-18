@@ -19,16 +19,17 @@
                 <input class="UserName_Input" required="required" type="text" name="Name" placeholder="Имя*"'></input>
             </div>
             <div class="E-mail">
-                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*"></input>
+                <input class="Email_Input" required="required" type="text" name="Email" placeholder="E-mail*" onchange="Email_Valid(value)"></input>
             </div>
             <div class="Password">
-                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*" onchange='DrawPassword()'></input>
+                <input class="Password_Input" required="required" type="Password" name="Password" placeholder="Пароль*" onchange='Password_Valid(value)'></input>
             </div>
             <div class="Password_Repeat">
-                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*" onchange='DrawPassword()'></input>
+                <input class="Password_Input_Repeat" required="required" type="Password" name="Password_Repeat" placeholder="Повторите пароль*" onchange='Match_Password(value)'></input>
             </div>
             <div class="Messages">
                 <ul>
+                    <li class="Valid_Email" hidden="hidden">Проверьте введенную почту</li>
                     <li class="Minimal_Password_Range" hidden="hidden">Минимальная длина пароля - 8 символов</li>
                     <li class="Wrong_Symbols_password" hidden="hidden">В пароле не должны присутсвовать символы<br>! @ # $ % ^ & * ( ) - _ ] [</li>
                     <li class="Passwords_Dont_Mathces" hidden="hidden">Пароли не совпадают</li>
