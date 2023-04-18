@@ -18,9 +18,8 @@ server.use(express.static(path.join(__dirname, 'public')));
 
 server.post('/Register', urlencodedParser, (req,res)=>{
     count+=1;
-    const docRef = db.collection('Users').doc(String(count));
+    const docRef = db.collection('Users').doc(String(req.body.Email));
     docRef.set({
-        ID:count,
         Name:req.body.Name,
         Email:req.body.Email,
         Password:req.body.Password,
@@ -28,13 +27,21 @@ server.post('/Register', urlencodedParser, (req,res)=>{
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 });
 
-server.post('/Login', urlencodedParser, (req,res)=>{
-    console.log(req.body);
-    let LogUser = new User;
-    // Полуучение Почты и Пароля с бд
-    // LogUser.Name=
-    // LogUser.Password=
-    res.sendFile(`${__dirname}/public/HTML/index.html`);
+server.post('/Login', urlencodedParser, async (req,res)=>{
+    console.log(req.body)
+    const userRef = db.collection('Users').doc(String(req.body.Email));
+    const doc = await userRef.get();
+    if (!doc.exists) {
+        res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
+    } else {
+        if(req.body.Password==doc.get('Password')){
+            res.sendFile(`${__dirname}/public/HTML/index_reg.html`);
+        }
+        else{
+            res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
+        }
+    }
+
 });
 
 
@@ -54,9 +61,6 @@ server.get('/Account', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/UserPage.html`);
 });
 
-server.get('/favicon.ico', (res,req)=>{
-    res.sendFile(`${__dirname}/favicon.ico`);
-});
 
 server.get('/Check_Register',(req,res)=>{
     res.sendFile(`${__dirname}/public/HTML/index.html`);

@@ -68,7 +68,7 @@ h1{
 .UserArea{
     text-align: right;
     margin-top: 4%;
-    display: none;
+    display: flex;
     background-color: beige;
     border-radius: 25px;
     border: black solid 1px;
