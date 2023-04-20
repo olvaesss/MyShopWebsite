@@ -2,7 +2,7 @@
   "name": "myshopwebsite",
   "version": "1.0.0",
   "description": "NodeJS Project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
   },

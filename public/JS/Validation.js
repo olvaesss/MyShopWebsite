@@ -3,8 +3,8 @@ let Special_flag=false;
 let Match_flag=false;
 let Email_flag=false;
 
-let Password_Inp;
-let Password_Inp_Rep
+let Password_Inp=String;
+let Password_Inp_Rep=String;
 
 function Password_Valid(Input){
     let arr_banned=['!','@','#','$','%','^','&','*','(',')','-','_','=','+',' ',',','<','.','>','/','?',']','['];
@@ -17,7 +17,8 @@ function Password_Valid(Input){
     };
     if(flag===true){
         Special_flag=true;
-        document.querySelector(".Wrong_Symbols_password").hidden=true}
+        document.querySelector(".Wrong_Symbols_password").hidden=true;
+    }
     else{
         document.querySelector(".Wrong_Symbols_password").hidden=false;
         Special_flag=false     
@@ -48,7 +49,7 @@ function Match_Password(Input_Repeat){
 
 function Email_Valid(Email){
     const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-    Email=document.querySelector('.Email_Input').value
+    Email=document.querySelector('.Email_Input').value;
     if(EMAIL_REGEXP.test(Email)===true){
         Email_flag=true
         document.querySelector('.Valid_Email').hidden=true;

@@ -12,7 +12,7 @@
     <body>
     <div class="body-flex">
         <div class="Back_Button">
-            <button class="GoMain_button" onclick="GoPage(value)" value="/">На главную</button>
+            <button class="GoMain_button" onclick="window.location.href='/'">На главную</button>
         </div>
         <form action='' method="post" class="RegisterArea">
             <div class="Username">
@@ -39,7 +39,7 @@
         </form>
         <div class="HaveAccountDiv">
             <a>У вас уже есть аккаунт? Войдите в него!</a>
-           <button onclick="GoPage(value)" class="HaveAccountBtn" value="Login"><a>Войти</a></button>
+           <button onclick="window.location.href='/Login'" class="HaveAccountBtn" ><a>Войти</a></button>
         </div>
     </div>
     </body>

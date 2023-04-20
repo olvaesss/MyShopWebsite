@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/index.css" type="text/css">
     <link rel="ico" href="/favicon.ico" type="image/x-icon">
-    <script src="../JS/GoPage.js"></script>
     <title>Borcelle</title>
 </head>
 
@@ -20,11 +19,10 @@
         </div>
             <div class="Buttons">
                 <div>
-                    <button onclick="GoPage(value)" class="Register"
-                        value="Register"><a>Зарегестрироваться</a></button>
+                    <button onclick="window.location.href='/Register'" class="Register"><a>Зарегестрироваться</a></button>
                 </div>
                 <div>
-                    <button onclick="GoPage(value)" class="Login" value="Login"><a>Войти</a></button>
+                    <button onclick="window.location.href='/Login'" class="Login"><a>Войти</a></button>
                 </div>
             </div>
     </header>

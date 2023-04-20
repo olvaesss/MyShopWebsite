@@ -16,6 +16,8 @@ let admin_password="adminQWE123"
 //
 
 
+
+
 server.use(express.static(path.join(__dirname, 'public')));
 
 server.post('/Register', urlencodedParser, (req,res)=>{
@@ -57,6 +59,9 @@ server.post('/Login', urlencodedParser, async (req,res)=>{
 server.get('/', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 });
+server.get('/index_reg', (req, res) => {
+    res.sendFile(`${__dirname}/public/HTML/index_reg.html`);
+});
 
 server.get('/Login', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/Login.html`);
@@ -69,11 +74,6 @@ server.get('/Register', (req, res) => {
 server.get('/Account', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/UserPage.html`);
 });
-
-
-server.get('/Check_Register',(req,res)=>{
-    res.sendFile(`${__dirname}/public/HTML/index.html`);
-})
 
 server.listen(2000,()=>{
     console.log("Server running at http://localhost:2000/")
