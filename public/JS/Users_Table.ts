@@ -4,3 +4,8 @@ class User{
     Password=String
 }
 
+
+
+let UserInfo=
+
+document.querySelector('.UserName')?.textContent

@@ -1,10 +1,10 @@
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
-const serviceAccount = require(`${__dirname}/myshopwebsite-4ffa7-firebase-adminsdk-yojkb-a75865fe9e.json`);
+const serviceAccount = (`myshopwebsite-4ffa7-firebase-adminsdk-yojkb-a75865fe9e.json`);
 initializeApp({
     credential: cert(serviceAccount)
 });
-const db = getFirestore();  
+const db = getFirestore();
 const express = require('express');
 const server = express();
 const path = require ('path');
@@ -20,13 +20,19 @@ let admin_password="adminQWE123"
 
 server.use(express.static(path.join(__dirname, 'public')));
 
-server.post('/Register', urlencodedParser, (req,res)=>{
+server.post('/Register', urlencodedParser, async (req,res)=>{
     const docRef = db.collection('Users').doc(String(req.body.Email));
-    docRef.set({
-        Name:req.body.Name,
-        Email:req.body.Email,
-        Password:req.body.Password,
-    });
+    const doc = await userRef.get();
+    if(!doc.exists){
+        docRef.set({
+            Name:req.body.Name,
+            Email:req.body.Email,
+            Password:req.body.Password,
+        });
+    }
+    else{
+        
+    }
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 });
 
@@ -43,24 +49,15 @@ server.post('/Login', urlencodedParser, async (req,res)=>{
         const userRef = db.collection('Users').doc(String(req.body.Email));
         const doc = await userRef.get();
         if (!doc.exists) {
-            res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
-        } else {
-            if(req.body.Password==doc.get('Password')){
-                res.sendFile(`${__dirname}/public/HTML/index_reg.html`);
-            }
-            else{
-                res.sendFile(`${__dirname}/public/HTML/Login_Incorrect_Input.html`);
-            }
+            res.send(document)
         }
+        
     }
 });
 
 
 server.get('/', (req, res) => {
     res.sendFile(`${__dirname}/public/HTML/index.html`);
-});
-server.get('/index_reg', (req, res) => {
-    res.sendFile(`${__dirname}/public/HTML/index_reg.html`);
 });
 
 server.get('/Login', (req, res) => {
