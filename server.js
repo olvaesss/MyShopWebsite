@@ -1,38 +1,19 @@
-const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
-const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
-const serviceAccount = (`myshopwebsite-4ffa7-firebase-adminsdk-yojkb-a75865fe9e.json`);
-initializeApp({
-    credential: cert(serviceAccount)
-});
-const db = getFirestore();
-const express = require('express');
+import express, { urlencoded} from 'express';
 const server = express();
-const path = require ('path');
-const urlencodedParser = express.urlencoded({extended: false});
-
+import { join } from 'path';
+const urlencodedParser = urlencoded({extended: false});
+import { db } from './public/JS/firestore';
 //admin
-let admin_login="admin@gmail.com"
-let admin_password="adminQWE123"
+let admin_login="admin@gmail.com";
+let admin_password="adminQWE123";
 //
 
 
 
 
-server.use(express.static(path.join(__dirname, 'public')));
-
 server.post('/Register', urlencodedParser, async (req,res)=>{
-    const docRef = db.collection('Users').doc(String(req.body.Email));
-    const doc = await userRef.get();
-    if(!doc.exists){
-        docRef.set({
-            Name:req.body.Name,
-            Email:req.body.Email,
-            Password:req.body.Password,
-        });
-    }
-    else{
-        
-    }
+    const docRef = collection('Users').doc(String(req.body.Email));
+    const doc = await docRef.get();
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 });
 
@@ -46,7 +27,7 @@ server.post('/Login', urlencodedParser, async (req,res)=>{
         res.sendFile(`${__dirname}/public/HTML/admin.html`)
     }
     else{
-        const userRef = db.collection('Users').doc(String(req.body.Email));
+        const userRef = collection('Users').doc(String(req.body.Email));
         const doc = await userRef.get();
         if (!doc.exists) {
             res.send(document)
