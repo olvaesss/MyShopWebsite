@@ -2,18 +2,29 @@ import express, { urlencoded} from 'express';
 const server = express();
 import { join } from 'path';
 const urlencodedParser = urlencoded({extended: false});
-import { db } from './public/JS/firestore';
+
 //admin
-let admin_login="admin@gmail.com";
-let admin_password="adminQWE123";
+let admin_login="admin@gmail.com"
+let admin_password="adminQWE123"
 //
 
+import  {db}  from './public/JS/firestore'
 
 
 
 server.post('/Register', urlencodedParser, async (req,res)=>{
     const docRef = collection('Users').doc(String(req.body.Email));
-    const doc = await docRef.get();
+    const doc = await userRef.get();
+    if(!doc.exists){
+        docRef.set({
+            Name:req.body.Name,
+            Email:req.body.Email,
+            Password:req.body.Password,
+        });
+    }
+    else{
+        
+    }
     res.sendFile(`${__dirname}/public/HTML/index.html`);
 });
 

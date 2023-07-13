@@ -4,5 +4,7 @@ const serviceAccount = (`myshopwebsite-4ffa7-firebase-adminsdk-yojkb-a75865fe9e.
 initializeApp({
     credential: cert(serviceAccount)
 });
-export const db = getFirestore();
+const db = getFirestore();
 
+module.exports = db;
+export {db}

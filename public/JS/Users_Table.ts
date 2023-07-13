@@ -1,9 +1,11 @@
-// function List(){
-//     // let ListUser = new User;
-//     let UsersCollection = db.collection('Users');
-//     const snapshot =  UsersCollection.get();
-//     snapshot.forEach(doc => {
-//         console.log(doc.id, '=>', doc.data());
-//         snapshot.})
-//     };
+class User{
+    Name=String;
+    Email=String;
+    Password=String
+}
 
+
+
+let UserInfo=
+
+document.querySelector('.UserName')?.textContent
